@@ -17,4 +17,4 @@ version： 1.0.0
 
 ```
 4、直下にstyle.cssを配置、topページをindex.phpに変更<br>
-5、zipにしてアップ？
+5、zipにしてアップ。テーマとして認識。<br>
