@@ -28,16 +28,17 @@ version： 1.0.0
 <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>">
 <meta property="og:url" content="<?php echo home_url(); ?>"/>
 <meta property="og:title" content="<?php the_title() ?>" />
-<meta property="og:image" content="images/footer_logo.png"/>
+<meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/images/footer_logo.png"/>
 <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/logo_tate_white.png">
 <meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
 <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/logo_tate_white.png">
-<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/reset.css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/common.css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
+
+<!-- wpの様々な機能を使えるようにするタグ -->
+<?php wp_head(); ?>
+
 </head>
 
 ```
