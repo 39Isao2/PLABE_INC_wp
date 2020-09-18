@@ -22,6 +22,22 @@ version： 1.0.0
 7、index.phpのheader部分を編集してcssのパスを通す。
 
 ```
-<!-- ここにソース -->
+<!-- とりあえずheadタグ内ここにソース -->
+<head>
+<title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
+<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>">
+<meta property="og:url" content="<?php echo home_url(); ?>"/>
+<meta property="og:title" content="<?php the_title() ?>" />
+<meta property="og:image" content="images/footer_logo.png"/>
+<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/logo_tate_white.png">
+<meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
+<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/logo_tate_white.png">
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/reset.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/common.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
+</head>
 
 ```
