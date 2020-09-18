@@ -16,5 +16,5 @@ Description: PLABE_INCのWordPressテーマです。
 version： 1.0.0
 
 ```
-4、直下にstyle.cssを配置<br>
+4、直下にstyle.cssを配置、topページをindex.phpに変更
 5、zipにしてアップ？
