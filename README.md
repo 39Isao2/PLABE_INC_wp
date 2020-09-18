@@ -19,7 +19,7 @@ version： 1.0.0
 4、直下にstyle.cssを配置、topページをindex.phpに変更<br>
 5、zipにしてアップ。テーマとして認識。<br>
 6、直下にスクリーンショットを設置 (screenshot.png  880×660px)<br>
-7、header.phpを編集してcssのパスを通す。
+7、index.phpのheader部分を編集してcssのパスを通す。
 
 ```
 <!-- ここにソース -->
