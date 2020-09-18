@@ -3,7 +3,7 @@ PLABE_INC_wp
 
 1、Local by Flywheelに環境作る <br>
 2、settingから日本語に<br>
-3、cssを編集してテーマ化する
+3、style.cssを作成
 
 ```
 /* style.css */
@@ -16,3 +16,5 @@ Description: PLABE_INCのWordPressテーマです。
 version： 1.0.0
 
 ```
+4、直下にstyle.cssを配置<br>
+5、zipにしてアップ？
