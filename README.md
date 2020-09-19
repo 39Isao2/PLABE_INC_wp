@@ -28,6 +28,8 @@ version： 1.0.0
 
 <!doctype html>
 <html>
+<!doctype html>
+<html>
 <head>
 <meta charset="UTF-8">
 <title>PLABE_Inc</title>
@@ -37,10 +39,7 @@ version： 1.0.0
 <meta property="og:url" content="https://www.plabe.jp"/>
 <meta property="og:title" content="TOP" />
 <meta property="og:type" content="website">
-<!--<meta property="og:description" content="記事の抜粋" />-->
 <meta property="og:image" content="images/footer_logo.png"/>
-<!--<meta name="twitter:card" content="カード種類" />-->
-<!--<meta name="twitter:site" content="@Twitterユーザー名" />-->
 <meta property="og:site_name" content="株式会社PLABE" />
 <meta property="og:locale" content="ja_JP" />
 <link rel="shortcut icon" href="images/logo_tate_white.png">
