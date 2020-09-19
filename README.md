@@ -57,8 +57,7 @@ version： 1.0.0
 
 wp化したheadタグ
 
-**<?php echo get_template_directory_uri(); ?>**
-
+<?php echo get_template_directory_uri(); ?>
 これがよく使うので覚えましょう。テーマのフォルダまでのパスを出力してくれます。
 ```
 
