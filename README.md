@@ -24,6 +24,7 @@ version： 1.0.0
 ## header.phpの作成
 ### 8、index.phpのために、まずはheadタグ内を書き換える
 
+もともとのheadタグ
 ```
 
 <!doctype html>
@@ -54,18 +55,38 @@ version： 1.0.0
 ```
 
 
+wp化したheadタグ
 
+#### <?php echo get_template_directory_uri(); ?>/
+これがよく使うので覚えましょう。テーマのフォルダまでのパスを出力してくれます。
 ```
-<!-- とりあえずheadタグ内ここにソース -->
+
+<!doctype html>
+<html>
 <head>
+<meta charset="UTF-8">
+<!-- ブログ名、各ページの記事やタイトル-->
 <title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="<?php bloginfo( 'description' ); ?>">
+<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/logo_tate_white.png">
+<!-- テーマのディレクトリ内のstyle.css読み込み -->
 <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>">
-<meta property="og:url" content="<?php echo home_url(); ?>"/>
+
+<!-- ディスクリプションの設定 -->
+<meta property="og:type" content="website">
 <meta property="og:title" content="<?php the_title() ?>" />
 <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/images/footer_logo.png"/>
-<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/logo_tate_white.png">
 <meta property="og:site_name" content="<?php bloginfo('name'); ?>" />
-<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/logo_tate_white.png">
+
+<!-- google フォント-->
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+
+<!-- css読み込み -->
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/reset.css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/common.css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
