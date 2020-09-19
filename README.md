@@ -24,7 +24,7 @@ version： 1.0.0
 ## header.phpの作成
 ### 8、index.phpのために、まずはheadタグ内を書き換える
 
-もともとのheadタグ
+#### もともと静的HTMLのheadタグ
 ```
 
 <!doctype html>
@@ -55,10 +55,13 @@ version： 1.0.0
 ```
 
 
-wp化したheadタグ
+#### wp化したheadタグ
 
-<?php echo get_template_directory_uri(); ?>
 これがよく使うので覚えましょう。テーマのフォルダまでのパスを出力してくれます。
+```
+<?php echo get_template_directory_uri(); ?>
+
+```
 ```
 
 <!doctype html>
