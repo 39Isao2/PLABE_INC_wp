@@ -20,7 +20,9 @@ version： 1.0.0
 5、zipにしてアップ。テーマとして認識。<br>
 6、直下にスクリーンショットを設置 (screenshot.png  880×660px)<br>
 7、index.phpのheader部分を編集してcssのパスを通す。
-8、index.phpのために、まずはheadタグ内を書き換える
+
+## header.phpの作成
+### 8、index.phpのために、まずはheadタグ内を書き換える
 
 ```
 
@@ -50,9 +52,9 @@ version： 1.0.0
 <link rel="stylesheet" href="css/style.css">
 </head>
 
-
-
 ```
+
+
 
 ```
 <!-- とりあえずheadタグ内ここにソース -->
