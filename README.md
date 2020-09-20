@@ -100,3 +100,28 @@ version： 1.0.0
 </head>
 
 ```
+
+
+### もともとのheaderタグ
+```
+
+<body>
+	<header>
+		<div class="navigation">
+			<img src="images/header_mark_and_name.png" width="8%" alt="plabe_logo">
+			<ul class="menu">
+				<li class="menu_item"><a href="index.html">HOME</a></li>
+				<li class="menu_item"><a href="about/index.html">ABOUT US</a></li>
+				<li class="menu_item"><a href="company/index.html">COMPANY</a></li>
+				<li class="menu_item"><a href="mailto:info@plabe.jp?subject=%8c%8f%96%bc&amp;body=%96%7b%95%b6">CONTACT</a></li>
+			</ul>
+			<div class="navigation_col">
+				<a href="https://www.instagram.com/plabe_inc/?hl=ja" target="_blank"><i class="fab fa-instagram"></i></a>
+				<a href="https://www.facebook.com/PLABEinc/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+				<a class="online-store-btn" href="https://theshop.plabe.jp/" target="_blank"><p>ONLINE STORE</p></a>
+			</div>
+		</div>
+	</header>
+
+```
+
