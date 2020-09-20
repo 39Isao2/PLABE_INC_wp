@@ -19,10 +19,10 @@ version： 1.0.0
 4、直下にstyle.cssを配置、topページをindex.phpに変更<br>
 5、zipにしてアップ。テーマとして認識。<br>
 6、直下にスクリーンショットを設置 (screenshot.png  880×660px)<br>
-7、index.phpのheader部分を編集してcssのパスを通す。
 
 ## まずはheader.phpの作成
-### 8、index.phpを分割します。
+7、index.phpのheader部分を編集してcssのパスを通す。<br>
+8、header.phpの作成
 
 #### もともと静的HTMLのheader部分
 ```
@@ -144,5 +144,5 @@ version： 1.0.0
 
 ```
 
-
+9、header.phpとして保存して、index.phpにインクルードする。
 
