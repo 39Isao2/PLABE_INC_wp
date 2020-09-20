@@ -75,11 +75,18 @@ version： 1.0.0
 
 #### wp化したheader部分 (ここまでをheader.phpにする)
 
-これがよく使うので覚えましょう。テーマのフォルダまでのパスを出力してくれます。
+よく使うWordPressのタグ2つ<br>
 ```
+<!-- テーマのフォルダまでのパスを出力してくれます。-->
 <?php echo get_template_directory_uri(); ?>
 
+<!-- トップページのURLを表示 -->
+<?php echo home_url() ?>
+
 ```
+
+### header.phpの完成
+
 ```
 
 <!doctype html>
@@ -134,8 +141,6 @@ version： 1.0.0
 			</div>
 		</div>
 	</header>
-	
-	
 
 ```
 
