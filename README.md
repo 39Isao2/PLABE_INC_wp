@@ -146,3 +146,7 @@ version： 1.0.0
 
 9、header.phpとして保存して、index.phpにインクルードする。
 
+```
+<!-- header.phpを読み込むタグ-->
+<?php get_header(); ?>
+```
