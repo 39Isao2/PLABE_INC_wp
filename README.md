@@ -22,9 +22,9 @@ version： 1.0.0
 7、index.phpのheader部分を編集してcssのパスを通す。
 
 ## header.phpの作成
-### 8、index.phpのために、まずはheadタグ内を書き換える
+### 8、index.phpを分割します。
 
-#### もともと静的HTMLのheadタグ
+#### もともと静的HTMLのheader部分
 ```
 
 <!doctype html>
@@ -52,10 +52,28 @@ version： 1.0.0
 <link rel="stylesheet" href="css/style.css">
 </head>
 
+<body>
+	<header>
+		<div class="navigation">
+			<img src="images/header_mark_and_name.png" width="8%" alt="plabe_logo">
+			<ul class="menu">
+				<li class="menu_item"><a href="index.html">HOME</a></li>
+				<li class="menu_item"><a href="about/index.html">ABOUT US</a></li>
+				<li class="menu_item"><a href="company/index.html">COMPANY</a></li>
+				<li class="menu_item"><a href="mailto:info@plabe.jp?subject=%8c%8f%96%bc&amp;body=%96%7b%95%b6">CONTACT</a></li>
+			</ul>
+			<div class="navigation_col">
+				<a href="https://www.instagram.com/plabe_inc/?hl=ja" target="_blank"><i class="fab fa-instagram"></i></a>
+				<a href="https://www.facebook.com/PLABEinc/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+				<a class="online-store-btn" href="https://theshop.plabe.jp/" target="_blank"><p>ONLINE STORE</p></a>
+			</div>
+		</div>
+	</header>
+
 ```
 
 
-#### wp化したheadタグ
+#### wp化したheader部分 (ここまでをheader.phpにする)
 
 これがよく使うので覚えましょう。テーマのフォルダまでのパスを出力してくれます。
 ```
@@ -99,21 +117,15 @@ version： 1.0.0
 
 </head>
 
-```
-
-
-### もともとのheaderタグ
-```
-
 <body>
 	<header>
 		<div class="navigation">
-			<img src="images/header_mark_and_name.png" width="8%" alt="plabe_logo">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/header_mark_and_name.png" width="8%" alt="plabe_logo">
 			<ul class="menu">
-				<li class="menu_item"><a href="index.html">HOME</a></li>
-				<li class="menu_item"><a href="about/index.html">ABOUT US</a></li>
-				<li class="menu_item"><a href="company/index.html">COMPANY</a></li>
-				<li class="menu_item"><a href="mailto:info@plabe.jp?subject=%8c%8f%96%bc&amp;body=%96%7b%95%b6">CONTACT</a></li>
+				<li class="menu_item"><a href="<?php echo home_url() ?>">HOME</a></li>
+				<li class="menu_item"><a href="<?php echo home_url() ?>/about">ABOUT US</a></li>
+				<li class="menu_item"><a href="<?php echo home_url() ?>/company">COMPANY</a></li>
+				<li class="menu_item"><a href="<?php echo home_url() ?>/contact">COMPANY</a>CONTACT</a></li>
 			</ul>
 			<div class="navigation_col">
 				<a href="https://www.instagram.com/plabe_inc/?hl=ja" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -122,6 +134,10 @@ version： 1.0.0
 			</div>
 		</div>
 	</header>
+	
+	
 
 ```
+
+
 
