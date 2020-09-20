@@ -152,3 +152,7 @@ version： 1.0.0
 <!-- header.phpを読み込むタグ-->
 <?php get_header(); ?>
 ```
+
+10.footerもphpファイルのパーツにする
+
+### footer.phpの作成
