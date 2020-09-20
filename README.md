@@ -21,7 +21,7 @@ version： 1.0.0
 6、直下にスクリーンショットを設置 (screenshot.png  880×660px)<br>
 7、index.phpのheader部分を編集してcssのパスを通す。
 
-## header.phpの作成
+## まずはheader.phpの作成
 ### 8、index.phpを分割します。
 
 #### もともと静的HTMLのheader部分
@@ -85,7 +85,7 @@ version： 1.0.0
 
 ```
 
-### まずはheader.phpの完成
+### header.phpの完成
 
 ```
 
