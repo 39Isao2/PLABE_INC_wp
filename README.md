@@ -146,6 +146,8 @@ version： 1.0.0
 
 9、header.phpとして保存して、index.phpにインクルードする。
 
+<img src="https://github.com/55Kaerukun/PLABE_INC_wp/blob/master/img/header.png" width="600px">
+
 ```
 <!-- header.phpを読み込むタグ-->
 <?php get_header(); ?>
