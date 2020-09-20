@@ -85,7 +85,7 @@ version： 1.0.0
 
 ```
 
-### header.phpの完成
+### まずはheader.phpの完成
 
 ```
 
