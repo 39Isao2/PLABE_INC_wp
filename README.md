@@ -359,10 +359,21 @@ http://plabeinc.local/wp-content/themes/PLABE_INC/images/
 ```
 
 16、投稿→カテゴリーから、カテゴリーを作成しておく。<br>
-<img src="https://github.com/55Kaerukun/PLABE_INC_wp/blob/master/img/toukou.png" width="800px">
+
+<img src="https://github.com/55Kaerukun/PLABE_INC_wp/blob/master/img/cat.png" width="800px">
+
+17、記事を投稿しましょう。<br>
 
 ### 投稿画面
 <img src="https://github.com/55Kaerukun/PLABE_INC_wp/blob/master/img/toukou.png" width="800px">
 <br>
 <br>
 <img src="https://github.com/55Kaerukun/PLABE_INC_wp/blob/master/img/toukouKekka.png" width="800px">
+<br>
+<br>
+18、記事一覧ページの作成<br>
+
+参考 : ページの優先順位 <br>
+https://plusers.net/wordpress_theme_8 <br>
+
+### category.phpの作成
