@@ -360,4 +360,7 @@ http://plabeinc.local/wp-content/themes/PLABE_INC/images/
 
 16、投稿→カテゴリーから、カテゴリーを作成しておく。
 
-<img src="https://github.com/55Kaerukun/PLABE_INC_wp/blob/master/img/cat.png" width="800px">
+<img src="https://github.com/55Kaerukun/PLABE_INC_wp/blob/master/img/toukou.png" width="800px">
+<br>
+<br>
+<img src="https://github.com/55Kaerukun/PLABE_INC_wp/blob/master/img/toukouKekka.png" width="800px">
