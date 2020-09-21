@@ -226,6 +226,8 @@ $next.fadeIn($fade_speed).addClass("active");
 //});
 	</script>
 	
+<!-- wpの色々な機能を使えるようにする -->
+<?php wp_footer(); ?>
 </body>
 </html>
 
