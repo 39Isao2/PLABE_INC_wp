@@ -294,7 +294,7 @@ WPでは、下層ページのことを（固定ページ）と呼びます。<br
 
 ```
 
-14、固定ページに書き写す。（画像URLの置き換えがちょっと大変）
+14、固定ページに書き写しましょう。（画像URLの置き換えがちょっと大変）
 
 ```
 コマンド+Dで頑張りましょう。（説明します。）
@@ -306,3 +306,53 @@ http://plabeinc.local/wp-content/themes/PLABE_INC/images/
 
 <img src="https://github.com/55Kaerukun/PLABE_INC_wp/blob/master/img/page.png" width="600px">
 
+
+15、個別記事のファイルを作りましょう。
+### single.php
+
+```
+
+
+<!-- ヘッダー読み込み -->
+<?php get_header(); ?>
+
+<main>
+
+	<!-- 記事があったら表示 -->
+	<?php if(have_posts()): while(have_posts()):the_post(); ?>
+	  
+	
+	  	<!-- 投稿タイトルを表示 -->
+	  	<h2><?php the_title(); ?></h2>
+
+
+	  	<!-- 投稿日時を表示 -->
+	  	<time><?php the_time('Y.m.d'); ?></time>
+
+	  	<!-- 投稿カテゴリーを表示 -->
+	  	<p><?php the_category(); ?></p>
+	  
+	
+		<!-- エディタで入力したコンテンツ部分を表示 -->
+	    <div>
+	    	<?php the_content(); ?>
+	    </div>
+	  
+	<?php endwhile; endif; ?>
+
+	  
+	<!-- ページャーの表示 -->
+	<div class="pager">
+		<?php previous_post_link('%link','前の記事へ'); ?>
+		<?php next_post_link('%link','次の記事へ'); ?>
+	</div>
+
+</main>
+
+
+<!-- フッター読み込み -->
+<?php get_footer(); ?>
+
+
+
+```
