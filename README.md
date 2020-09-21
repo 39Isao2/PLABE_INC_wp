@@ -244,4 +244,4 @@ WPでは、下層ページのことを（固定ページ）と呼びます。<br
 
 <img src="https://github.com/55Kaerukun/PLABE_INC_wp/blob/master/img/kanri.png" width="600px">
 
-
+12、パーマリンク設定(URLのルールを設定します)
