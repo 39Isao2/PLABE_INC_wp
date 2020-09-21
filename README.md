@@ -82,6 +82,11 @@ version： 1.0.0
 
 <!-- テーマのフォルダまでのパスを出力してくれます。-->
 <?php echo get_template_directory_uri(); ?>
+
+トップ/テーマの場所/
+http://plabeinc.local/wp-content/themes/ を出力してくれる
+
+
 <!-- トップページのURLを表示 -->
 <?php echo home_url() ?>
 
@@ -288,4 +293,11 @@ WPでは、下層ページのことを（固定ページ）と呼びます。<br
 ```
 
 14、固定ページに書き写す。（画像URLの置き換えがちょっと大変）
+
+```
+コマンド+Dで頑張りましょう。（説明します。）
+
+// 画像までのパス
+http://plabeinc.local/wp-content/themes/PLABE_INC/images/
+```
 
