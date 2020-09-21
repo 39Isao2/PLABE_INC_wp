@@ -159,19 +159,18 @@ version： 1.0.0
 
 ```
 
-
-	<footer>
-		<div class="footer_nav">
-			<ul class="footer_menu">
-				<li class="menu_item"><a href="<?php echo home_url() ?>/about">ABOUT US</a></li>
-				<li class="menu_item"><a href="<?php echo home_url() ?>/company"></li>
-				<li class="menu_item"><a href="mailto:info@plabe.jp?subject=%8c%8f%96%bc&amp;body=%96%7b%95%b6">CONTACT</a></li>
-				<li class="menu_item"><a href="<?php echo home_url() ?>/policy">PRIVACY POLICY</a></li>
-			</ul>
-			<a href="index.html"><img src="<?php echo get_template_directory_uri(); ?>/images/footer_logo.png" alt="footer_logo"></a>
-			<p>© 2020 PLABE Inc. All rights reserved.</p>
-		</div>
-	</footer>
+<footer>
+	<div class="footer_nav">
+		<ul class="footer_menu">
+			<li class="menu_item"><a href="<?php echo home_url() ?>/about">ABOUT US</a></li>
+			<li class="menu_item"><a href="<?php echo home_url() ?>/company"></li>
+			<li class="menu_item"><a href="mailto:info@plabe.jp?subject=%8c%8f%96%bc&amp;body=%96%7b%95%b6">CONTACT</a></li>
+			<li class="menu_item"><a href="<?php echo home_url() ?>/policy">PRIVACY POLICY</a></li>
+		</ul>
+		<a href="index.html"><img src="<?php echo get_template_directory_uri(); ?>/images/footer_logo.png" alt="footer_logo"></a>
+		<p>© 2020 PLABE Inc. All rights reserved.</p>
+	</div>
+</footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/jquery.wavify.js"></script>
