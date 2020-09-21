@@ -371,9 +371,40 @@ http://plabeinc.local/wp-content/themes/PLABE_INC/images/
 <img src="https://github.com/55Kaerukun/PLABE_INC_wp/blob/master/img/toukouKekka.png" width="800px">
 <br>
 <br>
+
+### ワードプレスループ（肝）
 18、記事一覧ページの作成<br>
 
 参考 : ページの優先順位 <br>
 https://plusers.net/wordpress_theme_8 <br>
 
+
 ### category.phpの作成
+
+```
+
+```
+
+### 本番アップ作業
+
+0、本番サーバーにWordPressをインストールしておく。
+
+1、プラグイン「All in one Migration」を使って本番サーバーに引っ越す。
+https://webst8.com/blog/wordpress-all-in-one-migration/  <br><br>
+
+2、プラグイン「Search Regex」を使って、画像やパスなどのURLを一括変換 <br><br>
+https://favorite-fashion.com/blog043/
+
+
+
+#### その他
+カスタム投稿タイプの作り方(投稿の種類を増やせます、そこそこ使うかも)<br>
+https://webst8.com/blog/wordpress-custom-posts/
+<br>
+プラグイン「Advanced Custom Fieldsの使い方」<br>
+http://galileo-venus.com/2020/05/14/20200507_wp_acf01/
+<br>
+プラグイン「All in one SEOパック」より細かくページごとのSEOの設定ができるプラグインです。
+https://bazubu.com/all-in-one-seo-pack-23836.html
+<br>
+
