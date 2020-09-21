@@ -253,9 +253,34 @@ WPでは、下層ページのことを（固定ページ）と呼びます。<br
 ```
 参考 : https://liginc.co.jp/web/wp/customize/148458
 
-13、現状このような感じなので、下層ページを固定ページにしていきましょう！
+現状このような感じなので、下層ページを固定ページにしていきましょう！
 
 
 <img src="https://github.com/55Kaerukun/PLABE_INC_wp/blob/master/img/directory.png" width="600px">
 
+13、下層ページ(固定ページ)テンプレートの作成
+
+### page.php
+```
+
+<!-- header.phpの読み込み -->
+<?php get_header(); ?>
+ 
+  <!-- 固定ページのタイトルが表示されます。 -->
+  <h1><?php the_title(); ?></h1>
+
+  
+  <!-- 投稿があるかifで判断してあったら表示する、wpのおまじない的な書き方-->
+  <?php if(have_posts()): while(have_posts()):the_post(); ?>
+  
+  	<!-- 固定ページのエディタ内の内容表示 -->
+  	<?php the_content(); ?>
+  
+  <?php endwhile; endif; ?>
+
+ 
+<!-- footer.phpの読み込み -->
+<?php get_footer(); ?>
+
+```
 
