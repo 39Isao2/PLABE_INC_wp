@@ -171,8 +171,6 @@ version： 1.0.0
 <?php get_header(); ?>
 ```
 
-10.footerもphpファイルのパーツにする
-
 ### footer.phpの作成
 
 ```
@@ -224,3 +222,5 @@ $next.fadeIn($fade_speed).addClass("active");
 </html>
 
 ```
+
+10、footer.phpとして保存して、index.phpにインクルードする。
