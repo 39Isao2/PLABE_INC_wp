@@ -226,3 +226,6 @@ $next.fadeIn($fade_speed).addClass("active");
 10、footer.phpとして保存して、index.phpにインクルードする。
 
 <img src="https://github.com/55Kaerukun/PLABE_INC_wp/blob/master/img/footer.png" width="600px">
+
+
+### index.phpの仕上げで他の部分も各所、WPのタグに書き換える
