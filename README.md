@@ -356,3 +356,5 @@ http://plabeinc.local/wp-content/themes/PLABE_INC/images/
 
 
 ```
+
+16、投稿→カテゴリーから、カテゴリーを作成しておく。
