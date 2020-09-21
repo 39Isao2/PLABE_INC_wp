@@ -150,7 +150,8 @@ http://plabeinc.local/wp-content/themes/ を出力してくれる
 
 </head>
 
-<body>
+<!-- 各ページ名のidをつける(後に説明)-->
+<body id="<?php echo esc_attr( $post->post_name ); ?>">
 	<header>
 		<div class="navigation">
 			<img src="<?php echo get_template_directory_uri(); ?>/images/header_mark_and_name.png" width="8%" alt="plabe_logo">
