@@ -386,8 +386,24 @@ https://plusers.net/wordpress_theme_8 <br>
 ```
 
 
-### お問い合わせフォームの作成
+### お問い合わせフォームの作成（ Contact Form 7）
+一番有名なお問い合わせフォーム作成プラグイン
 
+<img src="http://hareumi.com/githubWP/ContactForm7.jpg" width="500px">
+
+プラグイン → 新規追加 プラグインを検索 → Contact Form 7 → インストール → いますぐ有効化
+
+<img src="http://hareumi.com/githubWP/cf7.jpg" width="400px">
+
+ショートコードをコピー 
+
+<img src="http://hareumi.com/githubWP/cf7_2.jpg" width="800px">
+
+固定ページを作って貼り付け → 更新
+
+<img src="http://hareumi.com/githubWP/cf7_3.jpg" width="400px">
+
+フォーム完成！
 
 
 ### 本番アップ作業
