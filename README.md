@@ -358,8 +358,10 @@ http://plabeinc.local/wp-content/themes/PLABE_INC/images/
 
 ```
 
-16、投稿→カテゴリーから、カテゴリーを作成しておく。
+16、投稿→カテゴリーから、カテゴリーを作成しておく。<br>
+<img src="https://github.com/55Kaerukun/PLABE_INC_wp/blob/master/img/toukou.png" width="800px">
 
+### 投稿画面
 <img src="https://github.com/55Kaerukun/PLABE_INC_wp/blob/master/img/toukou.png" width="800px">
 <br>
 <br>
