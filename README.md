@@ -156,3 +156,54 @@ version： 1.0.0
 10.footerもphpファイルのパーツにする
 
 ### footer.phpの作成
+
+```
+
+
+	<footer>
+		<div class="footer_nav">
+			<ul class="footer_menu">
+				<li class="menu_item"><a href="<?php echo home_url() ?>/about">ABOUT US</a></li>
+				<li class="menu_item"><a href="<?php echo home_url() ?>/company"></li>
+				<li class="menu_item"><a href="mailto:info@plabe.jp?subject=%8c%8f%96%bc&amp;body=%96%7b%95%b6">CONTACT</a></li>
+				<li class="menu_item"><a href="<?php echo home_url() ?>/policy">PRIVACY POLICY</a></li>
+			</ul>
+			<a href="index.html"><img src="<?php echo get_template_directory_uri(); ?>/images/footer_logo.png" alt="footer_logo"></a>
+			<p>© 2020 PLABE Inc. All rights reserved.</p>
+		</div>
+	</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/85188/jquery.wavify.js"></script>
+<script>
+	$(function(){
+// 設定
+var $width ='100%'; // 横幅
+var $height =1000; // 高さ
+var $interval = 3000; // 切り替わりの間隔（ミリ秒）
+var $fade_speed = 2000; // フェード処理の早さ（ミリ秒）
+$("#slide ul li").css({"position":"relative","overflow":"hidden","width":$width,"height":$height});
+$("#slide ul li").hide().css({"position":"absolute","top":0,"left":0});
+$("#slide ul li:first").addClass("active").show();
+setInterval(function(){
+var $active = $("#slide ul li.active");
+var $next = $active.next("li").length?$active.next("li"):$("#slide ul li:first");
+$active.fadeOut($fade_speed).removeClass("active");
+$next.fadeIn($fade_speed).addClass("active");
+},$interval);
+});
+	
+//	$(function() {
+//	setTimeout(function(){
+//		$('.start p').fadeIn(2000);
+//	},800); //0.5秒後にロゴをフェードイン!
+//	setTimeout(function(){
+//		$('.start').fadeOut(1500);
+//	},3000); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
+//});
+	</script>
+	
+</body>
+</html>
+
+```
