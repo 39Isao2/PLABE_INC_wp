@@ -228,4 +228,13 @@ $next.fadeIn($fade_speed).addClass("active");
 <img src="https://github.com/55Kaerukun/PLABE_INC_wp/blob/master/img/footer.png" width="600px">
 
 
-### index.phpの仕上げで他の部分も各所、WPのタグに書き換える
+11、index.phpの仕上げで他の部分も各所、WPのタグに書き換えましょう<br>
+```
+<!-- これしか使いません。-->
+<?php echo get_template_directory_uri(); ?>
+
+<?php echo home_url() ?>
+
+```
+https://gist.github.com/55Kaerukun/585068d5c4c371af4d7cbd2882bf8570
+
