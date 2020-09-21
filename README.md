@@ -252,8 +252,7 @@ WPでは、下層ページのことを（固定ページ）と呼びます。<br
 
 13、現状このような感じなので、下層ページを固定ページしていきましょう！
 
-```
+
 <img src="https://github.com/55Kaerukun/PLABE_INC_wp/blob/master/img/directory.png" width="600px">
 
-```
 
