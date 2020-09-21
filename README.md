@@ -250,7 +250,7 @@ WPでは、下層ページのことを（固定ページ）と呼びます。<br
 ```
 参考 : https://liginc.co.jp/web/wp/customize/148458
 
-13、現状このような感じなので、下層ページを固定ページしていきましょう！
+13、現状このような感じなので、下層ページを固定ページにしていきましょう！
 
 
 <img src="https://github.com/55Kaerukun/PLABE_INC_wp/blob/master/img/directory.png" width="600px">
