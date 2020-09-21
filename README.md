@@ -239,3 +239,9 @@ $next.fadeIn($fade_speed).addClass("active");
 index.phpのソース<br>
 https://gist.github.com/55Kaerukun/585068d5c4c371af4d7cbd2882bf8570
 
+### 管理画面から固定ページ制作の準備
+WPでは、下層ページのことを（固定ページ）と呼びます。<br>
+
+<img src="https://github.com/55Kaerukun/PLABE_INC_wp/blob/master/img/kanri.png" width="600px">
+
+
