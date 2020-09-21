@@ -75,13 +75,31 @@ version： 1.0.0
 
 #### wp化したheader部分 (ここまでをheader.phpにする)
 
-よく使うWordPressのタグ2つ<br>
+このページで出てくるWPのタグ<br>
 ```
+
+<!-- この2つはすごくよく使います！ -->
+
 <!-- テーマのフォルダまでのパスを出力してくれます。-->
 <?php echo get_template_directory_uri(); ?>
-
 <!-- トップページのURLを表示 -->
 <?php echo home_url() ?>
+
+
+<!-- 主にheadタグで使用 -->
+
+<!-- ブログ名(サイト名)を表示 -->
+<?php bloginfo('name'); ?> 
+
+<!-- 現在のページ名を表示 -->
+<?php wp_title(); ?>
+
+<!-- ブログのdescriptionを表示 -->
+<?php bloginfo( 'description' ); ?>
+
+<!-- 直下のcss読み込む(テーマ名などの情報) -->
+<?php bloginfo( 'stylesheet_url' ); ?>
+
 
 ```
 
