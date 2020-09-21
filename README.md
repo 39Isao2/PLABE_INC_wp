@@ -136,9 +136,9 @@ version： 1.0.0
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/reset.css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/common.css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/acout/css/style.css">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/company/css/style.css">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/policy/css/style.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/about/css/about.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/company/css/company.css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/policy/css/policy.css">
 
 <!-- wpの様々な機能を使えるようにするタグ -->
 <?php wp_head(); ?>
