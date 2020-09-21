@@ -236,5 +236,6 @@ $next.fadeIn($fade_speed).addClass("active");
 <?php echo home_url() ?>
 
 ```
+index.phpのソース<br>
 https://gist.github.com/55Kaerukun/585068d5c4c371af4d7cbd2882bf8570
 
