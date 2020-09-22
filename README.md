@@ -438,25 +438,6 @@ news部分のphp化（今回用にループに組み込む）
 </section>
 
 
-
-<?php if (have_posts()) : ?>
-	<?php while (have_posts()) : the_post(); ?>
-
-    <!-- 投稿日時 -->
-    <?php the_time('Y年m月d日') ?>
-
-    <!-- 投稿のリンク先 -->
-    <a href="<?php the_permalink() ?>">
-        <!-- 投稿タイトル -->
-        <?php the_title(); ?>
-    </a>
-	
-<?php endwhile; ?>
-<?php else : ?>
-    <p>投稿が見つかりませんでした。</p>
-<?php endif; ?>
-
-
 ```
 
 
