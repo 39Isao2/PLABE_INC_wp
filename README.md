@@ -472,7 +472,7 @@ https://plusers.net/wordpress_theme_8 <br>
     <time><?php the_time('Y.m.d'); ?></time>
 
     <!-- タイトル出力 -->
-    <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+    <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
     <!-- アイキャッチ出力 -->
     <?php the_post_thumbnail('thumbnail'); ?>
