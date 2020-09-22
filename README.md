@@ -457,9 +457,15 @@ http://plabeinc.local/wp-content/themes/PLABE_INC/images/
 
 function.phpに記述してサムネイルを使用できるようにする。
 
-### function.php
+### functions.php
 https://designsupply-web.com/media/knowledgeside/1815/
 ```
+<?php
+
+// アイキャッチを使用可能に
+add_theme_support('post-thumbnails');
+add_image_size( 'custom_thumbnails', 300, 300, true );
+
 
 ```
 
