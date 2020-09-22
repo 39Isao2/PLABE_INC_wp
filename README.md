@@ -459,6 +459,35 @@ https://plusers.net/wordpress_theme_8 <br>
 
 ```
 
+<?php get_header(); ?>
+
+<main>
+  
+<p><?php single_cat_title(); ?> カテゴリー記事の一覧です</p>
+
+<?php if(have_posts()): while(have_posts()):the_post(); ?>
+
+  <div class="content">
+    <!-- 投稿日付 -->
+    <time><?php the_time('Y.m.d'); ?></time>
+
+    <!-- タイトル出力 -->
+    <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+
+    <!-- アイキャッチ出力 -->
+    <?php the_post_thumbnail('thumbnail'); ?>
+  </div>
+  
+<?php endwhile; endif; ?>
+  
+<div class="pager">
+    <?php previous_posts_link('次のページへ'); ?>
+    <?php next_posts_link('前のページへ'); ?>
+</div>
+</main>
+
+<?php get_footer(); ?>
+
 ```
 
 
