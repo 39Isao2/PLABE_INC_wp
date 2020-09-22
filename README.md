@@ -2,7 +2,6 @@
 PLABE_INCのwpテーマ化
 
 1、Local by Flywheelに環境作る <br>
-<img src="https://github.com/55Kaerukun/WP/blob/master/images/wp1.png" width="500px">
 2、settingから日本語に<br>
 3、style.cssを作成
 
