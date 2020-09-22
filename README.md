@@ -372,6 +372,13 @@ http://plabeinc.local/wp-content/themes/PLABE_INC/images/
 <br>
 <br>
 
+
+<img src="https://github.com/55Kaerukun/PLABE_INC_wp/blob/master/img/news.png" width="800px">
+
+
+
+
+
 ### 投稿部分のphp化
 
 ```
