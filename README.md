@@ -455,7 +455,13 @@ http://plabeinc.local/wp-content/themes/PLABE_INC/images/
 
 18、記事一覧ページの作成<br>
 
+function.phpに記述してサムネイルを使用できるようにする。
 
+### function.php
+https://designsupply-web.com/media/knowledgeside/1815/
+```
+
+```
 
 
 参考 : ページの優先順位 <br>
