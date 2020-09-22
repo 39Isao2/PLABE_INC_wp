@@ -414,27 +414,29 @@ http://plabeinc.local/wp-content/themes/PLABE_INC/images/
 
 
 
-news部分のphp化（今回用にループに組み込む）
+トップページnews部分のphp化（今回用にループに組み込む）
 ```
 <!-- news部分のphp化 -->
 <section class="news_section">
 	<h2>News & Topics</h2>
-	
 	<ul>
-	　　<?php if (have_posts()) : ?>
-		<?php while (have_posts()) : the_post(); ?>
-		
-			<!-- 記事の数だけ投稿を表示-->
-			<!-- <a href="#"><span>投稿日時</span>記事タイトル</a>-->
-			
-			<li><a href="<?php the_permalink() ?>"><span><?php the_time('Y年m月d日') ?></span><?php the_title(); ?></a></li>
-			
-		<?php endwhile; ?>
-		<?php else : ?>
-		    <p>投稿が見つかりませんでした。</p>
-		<?php endif; ?>
+	  <?php
+	    $args = array(
+	      'posts_per_page' => 3 // 表示件数の指定
+	    );
+	    $posts = get_posts( $args );
+	    
+	    foreach ( $posts as $post ): // ループの開始
+	    setup_postdata( $post ); // 記事データの取得
+	  ?>
+	  
+	    <li><a href="<?php the_permalink() ?>"><span><?php the_time('Y年m月d日') ?></span><?php the_title(); ?></a></li>
+	    
+	<?php
+	  endforeach; // ループの終了
+	  wp_reset_postdata();
+	?>
 	</ul>
-	
 </section>
 
 
