@@ -372,8 +372,101 @@ http://plabeinc.local/wp-content/themes/PLABE_INC/images/
 <br>
 <br>
 
-### ワードプレスループ（肝）
+### 投稿部分のphp化
+
+```
+
+<!-- news部分 -->
+<section class="news_section">
+	<h2>News & Topics</h2>
+	<ul>
+		<li><a href="#"><span>2020.10.1</span>ホームページがリニューアルしました。</a></li>
+		<li><a href="#"><span>2020.10.1</span>臨時休業のお知らせ</a></li>
+		<li><a href="#"><span>2020.10.1</span>新商品追加のお知らせ</a></li>
+	</ul>
+</section>
+	
+```
+
+### WordPressループ
+```
+
+<!-- 投稿が存在したらその表示-->
+<?php if (have_posts()) : ?>
+	<?php while (have_posts()) : the_post(); ?>
+
+    <!-- 投稿日時 -->
+    <?php the_time('Y年m月d日') ?>
+
+    <!-- 投稿のリンク先 -->
+    <a href="<?php the_permalink() ?>">
+        <!-- 投稿タイトル -->
+        <?php the_title(); ?>
+    </a>
+	
+<?php endwhile; ?>
+<?php else : ?>
+    <p>投稿が見つかりませんでした。</p>
+<?php endif; ?>
+
+
+```
+
+
+
+news部分のphp化（今回用にループに組み込む）
+```
+<!-- news部分のphp化 -->
+<section class="news_section">
+	<h2>News & Topics</h2>
+	
+	<ul>
+	　　<?php if (have_posts()) : ?>
+		<?php while (have_posts()) : the_post(); ?>
+		
+			<!-- 記事の数だけ投稿を表示-->
+			<!-- <a href="#"><span>投稿日時</span>記事タイトル</a>-->
+			
+			<li><a href="<?php the_permalink() ?>"><span><?php the_time('Y年m月d日') ?></span><?php the_title(); ?></a></li>
+			
+		<?php endwhile; ?>
+		<?php else : ?>
+		    <p>投稿が見つかりませんでした。</p>
+		<?php endif; ?>
+	</ul>
+	
+</section>
+
+
+
+<?php if (have_posts()) : ?>
+	<?php while (have_posts()) : the_post(); ?>
+
+    <!-- 投稿日時 -->
+    <?php the_time('Y年m月d日') ?>
+
+    <!-- 投稿のリンク先 -->
+    <a href="<?php the_permalink() ?>">
+        <!-- 投稿タイトル -->
+        <?php the_title(); ?>
+    </a>
+	
+<?php endwhile; ?>
+<?php else : ?>
+    <p>投稿が見つかりませんでした。</p>
+<?php endif; ?>
+
+
+```
+
+
+
+
+
 18、記事一覧ページの作成<br>
+
+
+
 
 参考 : ページの優先順位 <br>
 https://plusers.net/wordpress_theme_8 <br>
