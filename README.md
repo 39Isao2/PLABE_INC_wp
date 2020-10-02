@@ -139,9 +139,6 @@ http://plabeinc.local/wp-content/themes/ を出力してくれる
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/reset.css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/common.css">
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/about.css">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/company.css">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/policy.css">
 
 <!-- wpの様々な機能を使えるようにするタグ -->
 <?php wp_head(); ?>
