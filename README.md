@@ -340,9 +340,11 @@ https://webdesignday.jp/inspiration/wordpress/4765/#is_page
 
 1日目ノルマ終了。
 
-
+<br>
+追加css https://gist.github.com/55Kaerukun/020df64ca00164727b1af762ec59d104
 15、個別記事のファイルを作りましょう。
 ### single.php
+
 
 ```
 
