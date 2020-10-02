@@ -27,9 +27,6 @@ version： 1.0.0
 
 #### もともと静的HTMLのheader部分
 ```
-
-<!doctype html>
-<html>
 <!doctype html>
 <html>
 <head>
