@@ -309,6 +309,38 @@ http://plabeinc.local/wp-content/themes/PLABE_INC/images/
 <img src="https://github.com/55Kaerukun/PLABE_INC_wp/blob/master/img/page.png" width="600px">
 
 
+
+### 条件分岐タグの使い方header.phpのcssの読み込み変更
+```
+
+
+<?php if ( 条件 ) : ?>
+条件を満たした内容が表示される
+<?php endif; ?>
+
+
+<!-- もしトップページだったら -->
+<?php if (  is_front_page() ||  is_home() ) : ?>
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
+<?php endif; ?>
+
+<!-- もし固定ページでスラッグaboutだったら -->
+<?php if ( is_page('about') ) : ?>
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/about.css">
+<?php endif; ?>
+
+
+↑ companyもpolicyも同じように書いてあげましょう。
+
+
+参考: WPよく使う条件分岐タグ
+https://webdesignday.jp/inspiration/wordpress/4765/#is_page
+
+```
+
+1日目ノルマ終了。
+
+
 15、個別記事のファイルを作りましょう。
 ### single.php
 
