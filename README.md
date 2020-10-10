@@ -336,9 +336,10 @@ https://webdesignday.jp/inspiration/wordpress/4765/#is_page
 
 <br>
 
-```
-追加css
+追加css <br>
 https://gist.github.com/55Kaerukun/020df64ca00164727b1af762ec59d104
+
+```
 
 bodyタグの変更 (ページの情報をクラス名として出力してくれる命令)
 <body <?php body_class(); ?>>
