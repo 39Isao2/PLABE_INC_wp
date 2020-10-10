@@ -550,6 +550,8 @@ https://plusers.net/wordpress_theme_8 <br>
 
 ```
 
+flex版 <br>
+https://gist.github.com/55Kaerukun/9967a7030c72c5a16d82f03982a96067
 
 ### お問い合わせフォームの作成（ Contact Form 7）
 一番有名なお問い合わせフォーム作成プラグイン
