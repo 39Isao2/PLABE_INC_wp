@@ -145,8 +145,8 @@ http://plabeinc.local/wp-content/themes/ を出力してくれる
 
 </head>
 
-<!-- 各ページ名のidをつける(後に説明)-->
-<body id="<?php echo esc_attr( $post->post_name ); ?>">
+<!-- 各ページの情報のclassをつける(後に説明)-->
+<body <?php body_class(); ?>>
 	<header>
 		<div class="navigation">
 			<img src="<?php echo get_template_directory_uri(); ?>/images/header_mark_and_name.png" width="8%" alt="plabe_logo">
@@ -335,7 +335,15 @@ https://webdesignday.jp/inspiration/wordpress/4765/#is_page
 1日目ノルマ終了。
 
 <br>
-追加css https://gist.github.com/55Kaerukun/020df64ca00164727b1af762ec59d104
+
+```
+追加css
+https://gist.github.com/55Kaerukun/020df64ca00164727b1af762ec59d104
+
+bodyタグの変更 (ページの情報をクラス名として出力してくれる命令)
+<body <?php body_class(); ?>>
+```
+
 15、個別記事のファイルを作りましょう。
 ### single.php
 
