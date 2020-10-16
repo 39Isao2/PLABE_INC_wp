@@ -607,7 +607,7 @@ https://webst8.com/blog/wordpress-custom-posts/
 ```
 
 /* カスタム投稿 */
-// 商品追加
+// 経営資産速報
 function create_post_type3() {
   $exampleSupports3 = [
     'title',
@@ -617,9 +617,9 @@ function create_post_type3() {
   ];
 
   // add post type
-  register_post_type( 'product_add',
+  register_post_type( 'management_news',
     array(
-      'label' => '商品追加',
+      'label' => '資産形成NEWS',
       'public' => true,
       'has_archive' => true,
       'menu_position' => 5,
@@ -628,8 +628,9 @@ function create_post_type3() {
   );
 
   // add taxonomy
-  regproduct_add_category',
-    'product_add',
+  register_taxonomy(
+    'management_news_category',
+    'management_news',
     array(
       'label' => 'カテゴリー',
       'labels' => array(
