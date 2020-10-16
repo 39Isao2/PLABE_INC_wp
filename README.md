@@ -602,6 +602,50 @@ https://favorite-fashion.com/blog043/
 #### その他
 カスタム投稿タイプの作り方(投稿の種類を増やせます、そこそこ使うかも)<br>
 https://webst8.com/blog/wordpress-custom-posts/
+
+
+```
+
+/* カスタム投稿 */
+// 商品追加
+function create_post_type3() {
+  $exampleSupports3 = [
+    'title',
+    'editor',
+    'thumbnail',
+    'revisions'
+  ];
+
+  // add post type
+  register_post_type( 'product_add',
+    array(
+      'label' => '商品追加',
+      'public' => true,
+      'has_archive' => true,
+      'menu_position' => 5,
+      'supports' => $exampleSupports3
+    )
+  );
+
+  // add taxonomy
+  regproduct_add_category',
+    'product_add',
+    array(
+      'label' => 'カテゴリー',
+      'labels' => array(
+        'all_items' => 'カテゴリー一覧',
+        'add_new_item' => '新規カテゴリーを追加'
+      ),
+      'hierarchical' => true
+    )
+  );
+}
+
+add_action( 'init', 'create_post_type3' );
+
+
+
+```
 <br>
 プラグイン「Advanced Custom Fieldsの使い方」<br>
 http://galileo-venus.com/2020/05/14/20200507_wp_acf01/
