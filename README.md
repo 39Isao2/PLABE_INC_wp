@@ -537,17 +537,52 @@ https://plusers.net/wordpress_theme_8 <br>
     <!-- アイキャッチ出力 -->
     <?php the_post_thumbnail('thumbnail'); ?>
     
-<!--<div class="thumbnail">
-<a href="<?php the_permalink(); ?>">
+<?php get_header(); ?>
+
+<main>
+  
+<p><?php single_cat_title(); ?> カテゴリー記事の一覧です</p>
+
+<section class="contents">
+
+<?php if(have_posts()): while(have_posts()):the_post(); ?>
+
+
+
+  <div class="content">
+    
+    <!-- 投稿日付 -->
+    <time><?php the_time('Y.m.d'); ?></time>
+
+    <!-- タイトル出力 -->
+    <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+
+    
+    <a href="<?php the_permalink(); ?>">
+
 <?php
-  if(has_post_thumbnail()):
-    <?php the_post_thumbnail('thumbnail'); ?>
-  else:
+if (has_post_thumbnail()) {
+	the_post_thumbnail( array(300,300) );
+} else {
+	 echo '<img src="http://plable2.local/wp-content/themes/plable/images/default.png">';
+}
 ?>
-<img src="<?php echo get_template_directory_uri(); ?>/images/no-image.png" alt="" />
-<?php endif; ?>
-</a>
-</div>-->
+
+    </a>
+
+  </div>
+  
+<?php endwhile; endif; ?>
+
+</section>
+  
+<div class="pager">
+    <?php previous_posts_link('次のページへ'); ?>
+    <?php next_posts_link('前のページへ'); ?>
+</div>
+</main>
+
+<?php get_footer(); ?>
 
 
   </div>
